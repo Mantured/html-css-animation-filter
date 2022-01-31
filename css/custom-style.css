@@ -12,8 +12,8 @@ div .ex-2-square:active{
 
 /* Esercizio 3 */
 div .ex-3-square:hover{
-    border-radius: 50%;
     transition: .5s;
+    border-radius: 50%;
 }
 
 /* Esercizio 4 */
@@ -24,13 +24,36 @@ div .ex-4-square:hover{
 
 /* Esercizio 5 */
 div .ex-5-square:hover{
-    transform: scale(2);
     transition: 1.5s;
+    transform: scale(2);
 }
 div .ex-5-square:active{
-    transform: scale(0.5);
     transition: 1.5s;
+    transform: scale(.5);
 }
 
 /* Esercizio 6 */
+div .ex-6-img:hover{
+    filter:grayscale(1);
+}
 
+/* Esercizio 7 */
+div .ex-7-img:hover{
+    transition: 2s;
+    filter:  grayscale(.92) sepia(.4);
+}
+
+/* Esercizio 8 */
+div .ex-8-img:hover{
+    transition: 2s;
+    border-radius: 15px;
+    filter:  grayscale(.8) sepia(.4);
+}
+
+/* Esercizio 9 */
+div .ex-9-img:hover{
+    transition: 2s;
+    transform: scale(1.5);
+    border-radius: 15px;
+    filter:  grayscale(.8) sepia(.4);
+}
