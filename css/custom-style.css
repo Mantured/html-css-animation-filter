@@ -81,7 +81,7 @@ div .ex-10-icon{
         transform: rotate(0.75turn);
     } 
         100% {
-            transform: rotate(0)
+            transform: rotate(0);
         }
 }
 
@@ -93,10 +93,10 @@ div .ex-11-icon:hover{
 /* Esercizio 12 */
 @keyframes slide-top-white{
     0% {
-        left:10%
+        left:10%;
     }
     50% {
-        left:70%
+        left:70%;
     }
     100% {
         left: 10%;
@@ -105,10 +105,10 @@ div .ex-11-icon:hover{
 
 @keyframes slide-bot-white{
     0% {
-        right:10%
+        right:10%;
     }
     50% {
-        right:70%
+        right:70%;
     }
     100% {
         right: 10%;
@@ -116,15 +116,83 @@ div .ex-11-icon:hover{
 }
 
 /* vale anche per il 13 oltre che il 12 */
-div .ex-12-button, div .ex-13-button{
+div .ex-12-button:hover, div .ex-13-button:hover{
     color: #23527c;
     text-decoration: underline;
 }
 
 div .ex-12-button:hover .ex-12-top-white {
-    animation: slide-top-white 2s linear;
+    animation: slide-top-white 2s linear infinite; /* infinite perchè mi piace di più */
 }
 
 div .ex-12-button:hover .ex-12-bottom-white{
-    animation: slide-bot-white 2s linear;
+    animation: slide-bot-white 2s linear infinite;
 }
+
+/* Esercizio 13 */
+
+@keyframes slide-endless-top{
+    0% {
+        left:10%;
+        top:-10px;
+    }
+    40% {
+        left:80%;
+        top:-10px;
+    }
+    55%{
+        left:80%;
+        top:100%;
+    }
+    70%{
+        left: -10px;
+        top:80%;
+    }
+    85%{
+        left:-20px;
+        top:-10px;
+    }
+    100%{
+        left: 10%;
+        top:-10px;
+    }
+}
+
+@keyframes slide-endless-bot{
+    0% {
+        right:20%;
+        bottom:-10px;
+    }
+    40% {
+        right:80%;
+        bottom:-10px;
+    }
+    55%{
+        right:80%;
+        bottom:100%;
+    }
+    70%{
+        right: -10px;
+        bottom:80%;
+    }
+    85%{
+        right:-20px;
+        bottom:-10px;
+    }
+    100%{
+        right: 20%;
+        bottom:- 10px;
+    }
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: slide-endless-top 1s linear;
+/*     background-color: red; */
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: slide-endless-bot 1s linear;
+    /* background-color: red; */
+}
+
